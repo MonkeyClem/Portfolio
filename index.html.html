@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clément JEULIN</title>
+    <meta charset="utf-8">
+
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            background-color: black
+        }
+        
+        .container {
+            max-width: 80%;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #333;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            animation: slide-in 1s ease-out forwards;
+        }
+
+        @keyframes slide-in {
+        0% {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        }
+
+
+        h1, h2, h3 {
+            color: #fff;
+            text-align: center;
+            position: relative;
+            animation: slide-in 1s ease-out forwards;
+        }
+
+        h1{
+            margin-bottom: 40px;
+        }
+        
+        p {
+            margin-bottom: 10px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+        }
+        
+        .section-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center
+        }
+    
+        .project-image {
+            max-width: 350px;
+            max-height: 400px;
+            margin-bottom: 10px;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;        
+        }
+        
+        .project-link {
+            max-width: 350px; /* Par exemple, vous pouvez ajuster la valeur selon vos préférences */
+            margin: 15px 15px; /*Centrer horizontalement les liens*/
+            text-decoration: none;
+            color: black;
+            background-color: #fff;
+            border-radius: 15px;
+            font-size: 14px;
+        }
+
+        .project-link:hover {
+            margin: 15px 15px;
+            box-shadow: #fdfdfd 0px 0px 6px 6px;
+            font-weight: bold;
+        }
+
+        .image-description{
+            text-align: center;
+            max-width: 350px;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+    <div class="container">
+        <h1 class = "section-title">Clément's Portfolio</h1>
+        
+        
+        <div class="section">
+            <h2 class="section-title">My Projects :</h2>
+            <div class="section-content">
+                <a class="project-link" href="https://creative-chaja-da131f.netlify.app">
+                    <img class="project-image" src="./assets/dating-app.png" alt="Projet d'Applications de Rencontre">
+                    <p class="image-description">Dating App</p>
+                </a>
+                <a class="project-link" href="https://MonkeyClem.github.io/Kasa-Deploy">
+                    <img class="project-image" src="./assets/kasa.png" alt="Projet 2">
+                    <p class="image-description">Kasa</p>
+                </a>
+                <a class="project-link" href="https://MonkeyClem.github.io/Projet-3-Open-Classrooms---Ohmyfood/">
+                    <img class="project-image" src="./assets/ohmyfood.png" alt="Projet 3">
+                    <p class="image-description">OhMyFood</p>
+                </a>
+                <a class="project-link" href="https://MonkeyClem.github.io/Projet-3-Open-Classrooms---Ohmyfood/">
+                    <img class="project-image" src="./assets/booki.png" alt="Projet 3">
+                    <p class="image-description">Booki</p>
+                </a>
+            </div>
+        </div>
+        
+        <!-- <div class="section">
+            <h2 class="section-title">Formation</h2>
+            <div class="section-content">
+                <h3>Université XYZ</h3>
+                <p>Diplôme : Licence en Informatique</p>
+                <p>Dates : 2008 - 2011</p>
+                
+                <h3>École ABC</h3>
+                <p>Diplôme : Baccalauréat en Design</p>
+                <p>Dates : 2012 - 2015</p>
+            </div>
+        </div> -->
+<!--         
+        <div class="section">
+            <h2 class="section-title">Compétences</h2>
+            <div class="section-content">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>JavaScript</p>
+        </div>  -->
+
+                    <div class="section">
+                        <h2 class="section-title">Contactez moi : </h2>
+                        <div class="section-content">
+                            <p class="contact-text">Email : clementjeulin@outlook.fr</p>
+                            <p class="contact-text">Téléphone : 06 77 93 08 06</p>
+                        </div>
+                    </div>
