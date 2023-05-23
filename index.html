@@ -9,14 +9,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
             @keyframes slide-in {
-        0% {
-            opacity: 0;
-            transform: translateY(-50px);
-        }
-        100% {
-            opacity: 1;
-            transform: translateY(0);
-        }
+                0% {
+                    opacity: 0;
+                    transform: translateY(-50px);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
         }
 
         body {
@@ -34,7 +34,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        height: 80vh;
+        height: 70vh;
         background-color: black;
         color: #fff;
         overflow: hidden;
@@ -85,7 +85,7 @@
 
 .welcome-undertext{
     text-align: center;
-    animation: lightingAnimation 5s ease-in-out infinite;
+    animation: lightingAnimation 3s ease-in-out infinite;
 
 }
 
@@ -144,6 +144,14 @@ nav li a:hover::after {
   }
 }
 
+.section{
+    text-align: center;
+}
+
+.section-content{
+    display: flex;
+    flex-direction: column;
+}
         
 
     </style>
@@ -155,13 +163,15 @@ nav li a:hover::after {
         <div class="container">
             <div class="welcome-container">
                 <h1 class="welcome">Welcome</h1>
-                <p class="welcome-undertext">Clément, Junior Web Developper</p>
+                <p class="">Clément JEULIN 
+                                            <br> JUNIOR WEB DEVELOPPER
+                <p class="welcome-undertext">-- Looking for an Internship --</p>
             </div>
             <nav>
             <ul>
                 <li><a href="#accueil">Home</a></li>
-                <li><a href="./projects.html">Projets</a></li>
-                <li><a href="#apropos">About</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./assets/JEULIN (2).pdf">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             </nav>
@@ -175,4 +185,5 @@ nav li a:hover::after {
                 <p class="contact-text">Email : clementjeulin@outlook.fr</p>
                 <p class="contact-text">Téléphone : 06 77 93 08 06</p>
             </div>
+
         </div>

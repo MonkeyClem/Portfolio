@@ -5,9 +5,10 @@
     <meta charset="utf-8">
 
     <style>
-        
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Poppins", sans-serif;
             margin: 0;
             padding: 0;
             color: #fff;
@@ -88,13 +89,18 @@
         .project-link:hover {
             margin: 15px 15px;
             box-shadow: #fdfdfd 0px 0px 6px 6px;
-            font-weight: bold;
         }
 
+        .image-title{
+            text-align: center;
+            max-width: 350px;
+            font-weight: bold;
+        }
         .image-description{
             text-align: center;
             max-width: 350px;
         }
+
 
     </style>
 
@@ -103,21 +109,22 @@
 
 <body>
     <div class="container">
-        <h1 class = "section-title">Clément's Projects</h1>
+        <!-- <h1 class = "section-title">Clément's Projects</h1> -->
         
         
         <div class="section">
-            <h2 class="section-title">Full-Stack Projects :</h2>
+            <h2 class="section-title">FULL-STACK PROJECTS :</h2>
             <div class="section-content">
                 <a class="project-link" href="https://creative-chaja-da131f.netlify.app">
                     <img class="project-image" src="./assets/dating-app.png" alt="Projet d'Applications de Rencontre">
-                    <p class="image-description">Dating App</p>
+                    <p class="image-title">Dating App</p>
+                    <p class="image-description">A MERN Project, based on the Tinder Model.<br>(Updates coming soon)</p>
                 </a>
             </div>   
         </div>
 
         <div class="section">
-            <h2 class="section-title">Front-End Projects :</h2>
+            <h2 class="section-title">FRONT-END PROJECTS :</h2>
             <div class="section-content">
                 <a class="project-link" href="https://MonkeyClem.github.io/Kasa-Deploy">
                     <img class="project-image" src="./assets/kasa.png" alt="Projet 2">
@@ -130,9 +137,16 @@
                 </a>
                 <a class="project-link" href="https://MonkeyClem.github.io/Booki/">
                     <img class="project-image" src="./assets/booki.png" alt="Projet 3">
-                    <p class="image-description">Booki</p>
-                    <p>My very first HTML / CSS code. Front-end only<br>Inspired by the AirBnB model</p>
+                    <p class="image-title">Booki</p>
+                    <p class="image-description">My very first HTML / CSS code. Front-end only<br>Inspired by the AirBnB model</p>
                 </a>
+            </div>
+        </div>
+
+        
+        <div class="section">
+            <h2 class="section-title">BACK-END PROJECTS :</h2>
+            <div class="section-content">
             </div>
         </div>
         
@@ -160,7 +174,7 @@
                     <div class="section">
                         <h2 class="section-title">Contactez moi : </h2>
                         <div class="section-content">
-                            <p class="contact-text">Email : clementjeulin@outlook.fr</p>
+                            <p class="contact-text">Email : clementjeulin@outlook.fr</p>                            
                             <p class="contact-text">Téléphone : 06 77 93 08 06</p>
                         </div>
                     </div>
