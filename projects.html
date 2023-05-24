@@ -19,11 +19,57 @@
             max-width: 80%;
             margin: 30px auto;
             padding: 20px;
-            background-color: #333;
+            background-color: black;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             position: relative;
             animation: slide-in 1s ease-out forwards;
         }
+        .welcome-container{
+    border : white 2px solid;
+    padding: 18px;
+    box-shadow: white 2px 4px 2px 2px;
+    
+}
+
+.welcome {
+  font-size: 24px;
+  font-weight: bold;
+  z-index: 10;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    margin: 50px 0px;
+}
+nav li{
+    width: 25%;
+    text-align: center;
+    font-size: 24px;
+}
+
+nav li a::after {
+  content: '';
+  display: block;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.5s;
+}
+
+nav li a:hover::after {
+  width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover{
+   font-weight: bold;
+}
 
         @keyframes slide-in {
         0% {
@@ -65,7 +111,7 @@
         .section-content {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center
+            justify-content: space-around;
         }
     
         .project-image {
@@ -110,7 +156,19 @@
 <body>
     <div class="container">
         <!-- <h1 class = "section-title">Clément's Projects</h1> -->
-        
+        <header>
+            <div class="welcome-container">
+                <h1 class="welcome">PROJECTS</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="./assets/JEULIN (2).pdf">About</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+                </nav>
+        </header>
         
         <div class="section">
             <h2 class="section-title">FULL-STACK PROJECTS :</h2>
@@ -128,12 +186,21 @@
             <div class="section-content">
                 <a class="project-link" href="https://MonkeyClem.github.io/Kasa-Deploy">
                     <img class="project-image" src="./assets/kasa.png" alt="Projet 2">
-                    <p class="image-description">Kasa</p>
-                    <p>My first React app, front-end only</p>
+                    <p class="image-title">Kasa</p>
+                    <p class="image-description">My first React app, front-end only</p>
+                </a>
+                <a class="project-link" href="https://github.com/MonkeyClem/Kanap/tree/master/front">
+                    <img class="project-image" src="./assets/kanap.png" alt="Projet 2">
+                    <p class="image-title">Kanap</p>
+                    <p class="image-description">First Javascript project (Front Only, No Frameworks) 
+                        <!-- <br><br>
+                                                Products Display, Cart management, and navigation between the pages -->
+                    </p>
                 </a>
                 <a class="project-link" href="https://MonkeyClem.github.io/Projet-3-Open-Classrooms---Ohmyfood/">
                     <img class="project-image" src="./assets/ohmyfood.png" alt="Projet 3">
-                    <p class="image-description">OhMyFood</p>
+                    <p class="image-title">OhMyFood</p>
+                    <p class="image-description"> An app for reserving meals in restaurants.<br> Animation SCSS</p>
                 </a>
                 <a class="project-link" href="https://MonkeyClem.github.io/Booki/">
                     <img class="project-image" src="./assets/booki.png" alt="Projet 3">
@@ -147,34 +214,36 @@
         <div class="section">
             <h2 class="section-title">BACK-END PROJECTS :</h2>
             <div class="section-content">
+                <a class="project-link" href="https://github.com/MonkeyClem/PIQUANTEE_VersionFinale/tree/master/backend">
+                    <img class="project-image" src="./assets/piquantee.png" alt="Projet 2">
+                    <p class="image-title">Piquantee</p>
+                    <p class="image-description">My first backend project. I created an API for a culinary review site using 
+                        <br>MongoDB, Node.JS and Express 
+                    </p>
+                </a>
             </div>
         </div>
-        
-        <!-- <div class="section">
-            <h2 class="section-title">Formation</h2>
-            <div class="section-content">
-                <h3>Université XYZ</h3>
-                <p>Diplôme : Licence en Informatique</p>
-                <p>Dates : 2008 - 2011</p>
-                
-                <h3>École ABC</h3>
-                <p>Diplôme : Baccalauréat en Design</p>
-                <p>Dates : 2012 - 2015</p>
-            </div>
-        </div> -->
-<!--         
-        <div class="section">
-            <h2 class="section-title">Compétences</h2>
-            <div class="section-content">
-                <p>HTML</p>
-                <p>CSS</p>
-                <p>JavaScript</p>
-        </div>  -->
 
-                    <div class="section">
-                        <h2 class="section-title">Contactez moi : </h2>
-                        <div class="section-content">
-                            <p class="contact-text">Email : clementjeulin@outlook.fr</p>                            
-                            <p class="contact-text">Téléphone : 06 77 93 08 06</p>
-                        </div>
-                    </div>
+        <div class="section">
+            <h2 class="section-title">SEO OPTIMIZATION PROJECTS :</h2>
+            <div class="section-content">
+                <a class="project-link" href="https://github.com/MonkeyClem/PIQUANTEE_VersionFinale/tree/master/backend">
+                    <img class="project-image" src="./assets/lapanthere.png" alt="Projet 2">
+                    <p class="image-title">Agence de Web Design La Panthère</p>
+                    <p class="image-description">Implementation of good SEO practices / Removal of black-hat SEO techniques /Accessibility optimization
+                        <br> 
+                        <br>The non-optimized version is avalaible on my github 
+                    </p>
+                </a>
+            </div>
+        </div>
+     
+<!-- 
+        <footer class="section">
+            <h2 class="section-title">Contactez moi : </h2>
+            <div class="section-content">
+                <p class="contact-text">Email : clementjeulin@outlook.fr</p>
+                
+                <p class="contact-text">Téléphone : 06 77 93 08 06</p>
+            </div>
+        </footer> -->

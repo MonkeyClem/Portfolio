@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+         body {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            background-color: black
+        }
+
+        .welcome-container{
+        border : white 2px solid;
+        padding: 18px;
+        box-shadow: white 2px 4px 2px 2px;   
+        width: 50%;
+        margin: auto;
+        }
+
+        .welcome{
+        font-size: 24px;
+        font-weight: bold;
+        z-index: 10;
+        text-align: center;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        li{
+            list-style: none;
+            color: #fff;
+            text-decoration: none;
+            margin: 8px auto;
+
+        }
+        ul li a{
+            text-decoration: none;
+            color: #fff;
+        }
+
+
+        nav {
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 4px;
+        }
+
+        nav ul {
+        list-style: none;
+        padding: 8px 0px;
+        margin: 0;
+        /* display: flex; */
+        justify-content: space-around;
+        }
+
+        nav ul li {
+        display: block;
+        }
+
+        nav ul li a {
+        display: block;
+        padding: 10px 20px;
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+        }
+
+        nav ul li a:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+        }
+
+
+        nav li a::after {
+        content: '';
+        display: block;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: #fff;
+        transition: width 0.5s;
+        }
+
+        nav li a:hover::after{
+        width: 100%;
+        }
+
+        .contactList{
+            flex-direction: column;
+        }
+
+        .contactList li {
+            padding: 18px 0px;
+            border-bottom: white solid 2px;
+            font-weight: 700;
+            border-bottom: 2px solid transparent;
+
+        }
+
+        .contactList li:hover{
+            border-bottom: 2px solid white;
+        }
+
+
+    </style>
+</head>
+            <body>
+                <header>
+                    <div class="welcome-container">
+                        <h1 class="welcome">CONTACT ME</h1>
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./projects.html">Projects</a></li>
+                            <li><a href="./assets/JEULIN (2).pdf">About</a></li>
+                            <li><a href="./contact.html">Contact</a></li>
+                        </ul>
+                        </nav>
+                </header>
+
+                <ul class="contactList">
+                    <li><a href="mailto:clementjeulin@outlook.fr">E-MAIL : clementjeulin@outlook.fr</a></li>
+                    <li>PHONE : + 33 6 77 93 08 06</li>
+                    <li><a href="./projects.html">LinkedIn</a></li>
+                </ul>
+
+            </body>
+</html>
