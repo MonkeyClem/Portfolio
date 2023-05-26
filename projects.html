@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Clément JEULIN</title>
     <meta charset="utf-8">
@@ -14,7 +15,7 @@
             color: #fff;
             background-color: black
         }
-        
+
         .container {
             max-width: 80%;
             margin: 30px auto;
@@ -24,107 +25,114 @@
             position: relative;
             animation: slide-in 1s ease-out forwards;
         }
-        .welcome-container{
-    border : white 2px solid;
-    padding: 18px;
-    box-shadow: white 2px 4px 2px 2px;
-    
-}
 
-.welcome {
-  font-size: 24px;
-  font-weight: bold;
-  z-index: 10;
-}
+        .welcome-container {
+            border: white 2px solid;
+            padding: 18px;
+            box-shadow: white 2px 4px 2px 2px;
 
-nav ul{
-    list-style: none;
-    display: flex;
-    margin: 50px 0px;
-}
-nav li{
-    width: 25%;
-    text-align: center;
-    font-size: 24px;
-}
+        }
 
-nav li a::after {
-  content: '';
-  display: block;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background-color: #fff;
-  transition: width 0.5s;
-}
+        .welcome {
+            font-size: 24px;
+            font-weight: bold;
+            z-index: 10;
+        }
 
-nav li a:hover::after {
-  width: 100%;
-}
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 50px 0px;
+        }
 
-a{
-    text-decoration: none;
-    color: #fff;
-}
+        nav li {
+            width: 25%;
+            text-align: center;
+            font-size: 24px;
+        }
 
-a:hover{
-   font-weight: bold;
-}
+        nav li a::after {
+            content: '';
+            display: block;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background-color: #fff;
+            transition: width 0.5s;
+        }
+
+        nav li a:hover::after {
+            width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        a:hover {
+            font-weight: bold;
+        }
 
         @keyframes slide-in {
-        0% {
-            opacity: 0;
-            transform: translateY(-50px);
-        }
-        100% {
-            opacity: 1;
-            transform: translateY(0);
-        }
+            0% {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
 
-        h1, h2, h3 {
+        h1,
+        h2,
+        h3 {
             color: #fff;
             text-align: center;
             position: relative;
             animation: slide-in 1s ease-out forwards;
         }
 
-        h1{
+        h1 {
             margin-bottom: 40px;
         }
-        
+
         p {
             margin-bottom: 10px;
         }
-        
+
         .section {
             margin-bottom: 30px;
         }
-        
+
         .section-title {
             font-size: 18px;
             font-weight: bold;
             color: #fff;
         }
-        
+
         .section-content {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
         }
-    
+
         .project-image {
             max-width: 350px;
             max-height: 400px;
             margin-bottom: 10px;
             border-top-left-radius: 15px;
-            border-top-right-radius: 15px;        
+            border-top-right-radius: 15px;
         }
-        
+
         .project-link {
-            max-width: 350px; /* Par exemple, vous pouvez ajuster la valeur selon vos préférences */
-            margin: 15px 15px; /*Centrer horizontalement les liens*/
+            max-width: 350px;
+            /* Par exemple, vous pouvez ajuster la valeur selon vos préférences */
+            margin: 15px 15px;
+            /*Centrer horizontalement les liens*/
             text-decoration: none;
             color: black;
             background-color: #fff;
@@ -137,17 +145,16 @@ a:hover{
             box-shadow: #fdfdfd 0px 0px 6px 6px;
         }
 
-        .image-title{
+        .image-title {
             text-align: center;
             max-width: 350px;
             font-weight: bold;
         }
-        .image-description{
+
+        .image-description {
             text-align: center;
             max-width: 350px;
         }
-
-
     </style>
 
 </head>
@@ -167,18 +174,18 @@ a:hover{
                     <li><a href="./assets/JEULIN (2).pdf">About</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                 </ul>
-                </nav>
+            </nav>
         </header>
-        
+
         <div class="section">
             <h2 class="section-title">FULL-STACK PROJECTS :</h2>
             <div class="section-content">
                 <a class="project-link" href="https://creative-chaja-da131f.netlify.app">
                     <img class="project-image" src="./assets/dating-app.png" alt="Projet d'Applications de Rencontre">
                     <p class="image-title">Dating App</p>
-                    <p class="image-description">A MERN Project, based on the Tinder Model.<br>(Updates coming soon)</p>
+                    <p class="image-description">My First MERN Project, inspired by the dating applications.<br>(Updates coming soon)</p>
                 </a>
-            </div>   
+            </div>
         </div>
 
         <div class="section">
@@ -187,38 +194,38 @@ a:hover{
                 <a class="project-link" href="https://MonkeyClem.github.io/Kasa-Deploy">
                     <img class="project-image" src="./assets/kasa.png" alt="Projet 2">
                     <p class="image-title">Kasa</p>
-                    <p class="image-description">My first React app, front-end only</p>
+                    <p class="image-description">My first React app</p>
                 </a>
                 <a class="project-link" href="https://github.com/MonkeyClem/Kanap/tree/master/front">
                     <img class="project-image" src="./assets/kanap.png" alt="Projet 2">
                     <p class="image-title">Kanap</p>
-                    <p class="image-description">First Javascript project (Front Only, No Frameworks) 
-                        <!-- <br><br>
-                                                Products Display, Cart management, and navigation between the pages -->
+                    <p class="image-description">First Javascript project (Front Only, No Frameworks)
                     </p>
                 </a>
                 <a class="project-link" href="https://MonkeyClem.github.io/Projet-3-Open-Classrooms---Ohmyfood/">
                     <img class="project-image" src="./assets/ohmyfood.png" alt="Projet 3">
                     <p class="image-title">OhMyFood</p>
-                    <p class="image-description"> An app for reserving meals in restaurants.<br> Animation SCSS</p>
+                    <p class="image-description"> An app for reserving meals in restaurants.<br> Animations were made in SCSS</p>
                 </a>
                 <a class="project-link" href="https://MonkeyClem.github.io/Booki/">
                     <img class="project-image" src="./assets/booki.png" alt="Projet 3">
                     <p class="image-title">Booki</p>
-                    <p class="image-description">My very first HTML / CSS code. Front-end only<br>Inspired by the AirBnB model</p>
+                    <p class="image-description">My very first HTML / CSS code.</p>
                 </a>
             </div>
         </div>
 
-        
+
         <div class="section">
             <h2 class="section-title">BACK-END PROJECTS :</h2>
             <div class="section-content">
-                <a class="project-link" href="https://github.com/MonkeyClem/PIQUANTEE_VersionFinale/tree/master/backend">
+                <a class="project-link"
+                    href="https://github.com/MonkeyClem/PIQUANTEE_VersionFinale/tree/master/backend">
                     <img class="project-image" src="./assets/piquantee.png" alt="Projet 2">
                     <p class="image-title">Piquantee</p>
-                    <p class="image-description">My first backend project. I created an API for a culinary review site using 
-                        <br>MongoDB, Node.JS and Express 
+                    <p class="image-description">My first backend project. I created an API for a culinary review site
+                        using
+                        <br>MongoDB, Node.JS and Express
                     </p>
                 </a>
             </div>
@@ -227,23 +234,15 @@ a:hover{
         <div class="section">
             <h2 class="section-title">SEO OPTIMIZATION PROJECTS :</h2>
             <div class="section-content">
-                <a class="project-link" href="https://github.com/MonkeyClem/PIQUANTEE_VersionFinale/tree/master/backend">
+                <a class="project-link"
+                    href="https://github.com/MonkeyClem/La-Panthere---Optimization">
                     <img class="project-image" src="./assets/lapanthere.png" alt="Projet 2">
                     <p class="image-title">Agence de Web Design La Panthère</p>
-                    <p class="image-description">Implementation of good SEO practices / Removal of black-hat SEO techniques /Accessibility optimization
-                        <br> 
-                        <br>The non-optimized version is avalaible on my github 
+                    <p class="image-description">Implementation of good SEO practices / Removal of black-hat SEO
+                        techniques /Accessibility optimization
+                        <br>
+                        <br>The non-optimized version is avalaible on my Github
                     </p>
                 </a>
             </div>
         </div>
-     
-<!-- 
-        <footer class="section">
-            <h2 class="section-title">Contactez moi : </h2>
-            <div class="section-content">
-                <p class="contact-text">Email : clementjeulin@outlook.fr</p>
-                
-                <p class="contact-text">Téléphone : 06 77 93 08 06</p>
-            </div>
-        </footer> -->

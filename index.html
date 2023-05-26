@@ -1,49 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Clément JEULIN</title>
+    <title>Clément's Portfolio</title>
     <meta charset="utf-8">
 
     <style>
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-            @keyframes slide-in {
-                0% {
-                    opacity: 0;
-                    transform: translateY(-50px);
-                }
-                100% {
-                    opacity: 1;
-                    transform: translateY(0);
-                }
-        }
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
-        body {
-            font-family: "Poppins", sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #fff;
-            background-color: black;
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: black;
 
-        }
-        
+}
 
-        
-        .container {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        height: 70vh;
-        background-color: black;
-        color: #fff;
-        overflow: hidden;
-        position: relative;
-        animation: slide-in 1s ease-out forwards;
+.container {
+display: flex;
+justify-content: space-around;
+align-items: center;
+height: 70vh;
+background-color: black;
+color: #fff;
+overflow: hidden;
+position: relative;
+animation: slide-in 1s ease-out forwards;
 
-        }
+}
 
-        @keyframes lightingAnimation {
+@keyframes lightingAnimation {
   0% {
     color: #fff;
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
@@ -71,51 +69,51 @@
 }
 
 .welcome-container{
-    border : white 2px solid;
-    padding: 18px;
-    box-shadow: white 2px 4px 2px 2px;
-    
+border : white 2px solid;
+padding: 18px;
+box-shadow: white 2px 4px 2px 2px;
+
 }
 
 .welcome {
-  font-size: 72px;
-  font-weight: bold;
-  z-index: 10;
+font-size: 72px;
+font-weight: bold;
+z-index: 10;
 }
 
 .welcome-undertext{
-    text-align: center;
-    animation: lightingAnimation 3s ease-in-out infinite;
+text-align: center;
+animation: lightingAnimation 3s ease-in-out infinite;
 
 }
 
 
-        nav {
-        background-color: rgba(0, 0, 0, 0.5);
-        border-radius: 4px;
-        }
+nav {
+background-color: rgba(0, 0, 0, 0.5);
+border-radius: 4px;
+}
 
-        nav ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        }
+nav ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
 
-        nav ul li {
-        display: block;
-        }
+nav ul li {
+display: block;
+}
 
-        nav ul li a {
-        display: block;
-        padding: 10px 20px;
-        text-decoration: none;
-        color: white;
-        font-size: 25px;
-        }
+nav ul li a {
+display: block;
+padding: 10px 20px;
+text-decoration: none;
+color: white;
+font-size: 25px;
+}
 
-        nav ul li a:hover {
-        background-color: rgba(255, 255, 255, 0.3);
-        }
+nav ul li a:hover {
+background-color: rgba(255, 255, 255, 0.3);
+}
 
 
 nav li a::after {
@@ -132,12 +130,9 @@ nav li a:hover::after {
   width: 100%;
 }
 
-
 .section{
     text-align:left
 }
-
-        
 
     </style>
 
@@ -149,7 +144,8 @@ nav li a:hover::after {
             <div class="welcome-container">
                 <h1 class="welcome">Welcome</h1>
                 <p class="">Clément JEULIN 
-                                            <br> JUNIOR WEB DEVELOPPER
+                <br> JUNIOR WEB DEVELOPPER
+                </p>
                 <p class="welcome-undertext">-- Looking for an Internship --</p>
                 <p class="welcome-undertext">-- immediately available --</p>
             </div>
